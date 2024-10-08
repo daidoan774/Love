@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng ngày Phụ Nữ Việt Nam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Chào mừng ngày 20/10 💐</h1>
+
+    <div class="heart-container">
+        <div class="heart">
+            <div class="heart-text">Xuân Kim💖</div>
+        </div>
+
+        <!-- Pháo hoa -->
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+
+    <div class="footer-text">Chúc Vợ yêu mãi xinh đẹp, mạnh khỏe và luôn hạnh phúc 🙆 </div>
+    <script>
+        const heart = document.querySelector('.heart');
+    
+        function beatHeart() {
+            heart.style.transform = 'scale(1.1) rotate(-45deg)'; // Tăng kích thước trái tim
+            setTimeout(() => {
+                heart.style.transform = 'scale(1) rotate(-45deg)'; // Quay lại kích thước ban đầu
+            }, 300); // Thời gian của nhịp đập (300ms)
+        }
+    
+        setInterval(beatHeart, 1000); // Đặt nhịp đập trái tim mỗi 1 giây
+    </script>
+s    
+</body>
+</html>
